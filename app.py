@@ -4,12 +4,10 @@ from datetime import datetime
 import time
 import os
 
-if not os.path.exists("/home/appuser/.cache/ms-playwright"):
-  os.system("playwright install chromium")
+os.system("playwright install")
 
 import io
 from playwright.sync_api import sync_playwright
-# Page Configuration
 st.set_page_config(
     page_title="Tayari Operations Command Center",
     page_icon="🏍️",
